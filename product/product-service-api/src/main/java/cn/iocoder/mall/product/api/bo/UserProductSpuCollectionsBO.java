@@ -1,4 +1,4 @@
-package cn.iocoder.mall.user.api.dto;
+package cn.iocoder.mall.product.api.bo;
 
 import lombok.Data;
 import lombok.experimental.Accessors;
@@ -7,14 +7,13 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * 添加商品收藏参数
+ * 用户_商品_收藏记录表
  * @author xiaofeng
- * @date 2019/07/01 20:38
- * @version 1.0
+ * @date 2019-07-01 20:23:30
  */
 @Data
 @Accessors(chain = true)
-public class UserProductSpuCollectionsAddDTO implements Serializable {
+public class UserProductSpuCollectionsBO implements Serializable {
 
     /**
      * id自增长

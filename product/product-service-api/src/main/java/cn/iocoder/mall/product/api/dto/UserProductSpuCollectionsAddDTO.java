@@ -1,24 +1,20 @@
-package cn.iocoder.mall.user.biz.dataobject;
+package cn.iocoder.mall.product.api.dto;
 
-import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
 import java.io.Serializable;
 import java.util.Date;
 
-
 /**
- * 用户_商品_收藏记录表
- *
+ * 添加商品收藏参数
  * @author xiaofeng
- * @date 2019-07-01 20:23:30
+ * @date 2019/07/01 20:38
+ * @version 1.0
  */
-@TableName("user_spu_collections")
 @Data
 @Accessors(chain = true)
-public class UserProductSpuCollectionsDO implements Serializable {
-    private static final long serialVersionUID = 1L;
+public class UserProductSpuCollectionsAddDTO implements Serializable {
 
     /**
      * id自增长

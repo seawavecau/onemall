@@ -1,9 +1,10 @@
-package cn.iocoder.mall.user.biz.dao;
+package cn.iocoder.mall.product.dao;
 
-import cn.iocoder.mall.user.biz.dataobject.UserProductSpuCollectionsDO;
+import cn.iocoder.mall.product.dataobject.UserProductSpuCollectionsDO;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -13,6 +14,7 @@ import java.util.List;
  * @author xiaofeng
  * @date 2019-07-01 20:23:30
  */
+@Repository
 public interface UserProductSpuCollectionsMapper extends BaseMapper<UserProductSpuCollectionsDO> {
 
     /**
@@ -22,7 +24,7 @@ public interface UserProductSpuCollectionsMapper extends BaseMapper<UserProductS
      * @return
      */
     default UserProductSpuCollectionsDO getUserSpuCollectionsByUserIdAndSpuId(final Integer userId,
-            final Integer spuId) {
+                                                                              final Integer spuId) {
         QueryWrapper<UserProductSpuCollectionsDO> query = new QueryWrapper<UserProductSpuCollectionsDO>()
                 .eq("user_id", userId).eq("spu_id", spuId);
         return selectOne(query);

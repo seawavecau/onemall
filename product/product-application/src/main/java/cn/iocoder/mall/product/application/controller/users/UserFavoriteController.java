@@ -1,9 +1,9 @@
-package cn.iocoder.mall.user.application.controller.users;
+package cn.iocoder.mall.product.application.controller.users;
 
 import cn.iocoder.common.framework.vo.CommonResult;
-import cn.iocoder.mall.user.api.UserProductSpuCollectionsService;
-import cn.iocoder.mall.user.api.bo.UserProductSpuCollectionsPageBO;
-import cn.iocoder.mall.user.api.dto.UserProductSpuCollectionsPageDTO;
+import cn.iocoder.mall.product.api.UserProductSpuCollectionsService;
+import cn.iocoder.mall.product.api.bo.UserProductSpuCollectionsPageBO;
+import cn.iocoder.mall.product.api.dto.UserProductSpuCollectionsPageDTO;
 import cn.iocoder.mall.user.sdk.annotation.RequiresLogin;
 import cn.iocoder.mall.user.sdk.context.UserSecurityContextHolder;
 import io.swagger.annotations.Api;
